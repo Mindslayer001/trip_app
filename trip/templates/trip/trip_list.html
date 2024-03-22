@@ -1,0 +1,9 @@
+{% extends 'trip/_base.html' %}
+{% block content %}
+    <h1> Hello World</h1>
+    <ul>
+        {% for trip in trips %}
+            <li> <a  href="{% url 'note-spe-view' trip.pk %}">{{trip}}</a></li>
+        {% endfor %}
+    </ul>
+    {% endblock content %}

@@ -1,0 +1,5 @@
+<h1>Click LOGOUT button to logout from the webpage</h1>
+<form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <input type="submit" value="Logout">
+</form>

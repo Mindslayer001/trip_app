@@ -1,0 +1,6 @@
+<h1>please Login To see the Personalised content</h1> 
+<form action="{% url 'login' %}" method = 'POST'>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Login"></input>
+</form>

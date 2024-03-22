@@ -1,0 +1,12 @@
+{% extends 'trip/_base.html' %}
+{% block content %}
+
+<h1> Hello World</h1>
+{% if not notes %}
+    <h2> NO notes recorded for this trip. To create notes click <a href="{% url 'create-trip' %}">here</a></h2>
+{% else %}
+<ul>
+    <li><a href= "{% url 'note-view' %}">{{trips}}</a></li>
+</ul>
+{% endif %}
+{% endblock content %}

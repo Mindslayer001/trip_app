@@ -1,0 +1,11 @@
+{% extends 'trip/_base.html' %}
+{% block content %}
+<h1> Hello World</h1>
+<ul>
+    {% for note in notes %}
+    <li>
+        <a href="{% url 'trips-view' %}">{{note}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
